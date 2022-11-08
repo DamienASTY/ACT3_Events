@@ -1,0 +1,33 @@
+﻿<Window x:Class="ACT3_Events.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACT3_Events"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="500">
+    <Grid Background="Gray" x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="0">
+            <TextBlock FontSize="50" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="50">A</TextBlock>
+            <TextBox x:Name="A" FontSize="50" HorizontalAlignment="Center" Height="100" Width="300" TextAlignment="Right" Background="White"/>
+        </WrapPanel>
+        <WrapPanel Grid.Row="1">
+            <TextBlock FontSize="50" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="50">B</TextBlock>
+            <TextBox x:Name="B" FontSize="50" HorizontalAlignment="Right" Height="100" Width="300" TextAlignment="Right" Background="White"></TextBox>
+        </WrapPanel>
+        <WrapPanel Grid.Row="2">
+            <TextBlock FontSize="50" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="50">C</TextBlock>
+            <TextBox x:Name="C" FontSize="50" HorizontalAlignment="Right" Height="100" Width="300" TextAlignment="Right" Background="White"></TextBox>
+        </WrapPanel>
+        <WrapPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button  x:Name="calc" Height="50" Width="300" FontSize="30" MouseDown="Calculer">CALCULER</Button>
+            <Button x:Name="virtualBtn" Visibility="Hidden" Height="50" Width="50" Margin="30" FontWeight="Heavy" FontSize="30">V</Button>
+        </WrapPanel>
+    </Grid>
+</Window>
